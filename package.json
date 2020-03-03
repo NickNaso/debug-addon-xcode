@@ -1,0 +1,28 @@
+{
+  "name": "debug-addon-xcode",
+  "version": "1.0.0",
+  "description": "Debug Node.js native addon with Xcode",
+  "main": "index.js",
+  "scripts": {
+    "build-for-debug": "node-gyp configure --debug -- -f xcode",
+    "build-for-release": "node-gyp configure --release -- -f xcode"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickNaso/debug-addon-xcode.git"
+  },
+  "gypfile": true,
+  "author": {
+    "name": "Nicola Del Gobbo",
+    "email": "nicoladelgobbo@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/NickNaso/debug-addon-xcode/issues"
+  },
+  "homepage": "https://github.com/NickNaso/debug-addon-xcode#readme",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^2.0.0"
+  }
+}
