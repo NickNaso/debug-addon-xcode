@@ -2,7 +2,7 @@
 
 This is an example project for Node.js native addon that I used in my article entitled:
 
-- [Debug Node.js native addon with Xcode](#)
+- [Debug Node.js native addon with Xcode](https://medium.com/@nicknaso/debug-node-js-native-addon-with-xcode-656d740003c0)
 
 
 ## The Team
