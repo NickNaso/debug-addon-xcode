@@ -9,7 +9,7 @@ Napi::Value Add(const Napi::CallbackInfo& info) {
     throw Napi::TypeError::New(env, "Expected two numbers as arguments.");
   }
   int64_t a = info[0].As<Napi::Number>();
-  int64_t b = info[0].As<Napi::Number>();
+  int64_t b = info[1].As<Napi::Number>();
   int64_t sum = a + b;
   Napi::Number jsValue = Napi::Number::New(env, sum);
   return jsValue;

@@ -4,8 +4,9 @@
   "description": "Debug Node.js native addon with Xcode",
   "main": "index.js",
   "scripts": {
-    "build-for-debug": "node-gyp configure --debug -- -f xcode",
-    "build-for-release": "node-gyp configure --release -- -f xcode"
+    "build": "node-gyp build && configure -- -f xcode",
+    "rebuild": "node-gyp rebuild && configure -- -f xcode",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
